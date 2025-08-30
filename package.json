@@ -1,6 +1,6 @@
 {
   "name": "simp-wheel",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "main": "dist/simp-wheel.cjs.js",
   "module": "dist/simp-wheel.es.js",
@@ -30,7 +30,7 @@
     "motion": "^12.23.12",
     "react": ">=17",
     "react-dom": ">=17",
-    "simp-wheel": "^0.0.1",
+    "simp-wheel": "^0.0.5",
     "tailwindcss": "^4.1.12",
     "vite-plugin-dts": "^4.5.4"
   },

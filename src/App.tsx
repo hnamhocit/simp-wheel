@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Wheel } from "simp-wheel";
+import { SimpWheel } from "simp-wheel";
 
 const months = [
   "January",
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="p-4 space-y-4">
-      <Wheel
+      <SimpWheel
         classNames={{
           container: "w-md",
         }}

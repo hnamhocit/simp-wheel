@@ -7,7 +7,7 @@
 
 ```
 import { useState } from "react";
-import { Wheel } from "simp-wheel";
+import { SimpWheel } from "simp-wheel";
 
 const months = [
   "January",
