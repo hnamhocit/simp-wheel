@@ -1,0 +1,47 @@
+{
+  "name": "simp-wheel",
+  "version": "0.0.2",
+  "type": "module",
+  "main": "dist/simp-wheel.cjs.js",
+  "module": "dist/simp-wheel.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/simp-wheel.es.js",
+      "require": "./dist/simp-wheel.cjs.js"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "motion": "^12.23.12",
+    "react": ">=17",
+    "react-dom": ">=17",
+    "simp-wheel": "^0.0.1",
+    "tailwindcss": "^4.1.12",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "clsx": "^2.1.1",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.2"
+  }
+}
