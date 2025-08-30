@@ -1,6 +1,6 @@
 {
   "name": "simp-wheel",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/simp-wheel.cjs.js",
   "module": "dist/simp-wheel.es.js",

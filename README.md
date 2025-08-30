@@ -1,6 +1,6 @@
 # Simp Wheel
 
-## ![Demo Image]("https://github.com/hnamhocit/simp-wheel/blob/main/example.png")
+## ![Demo Image](https://github.com/hnamhocit/simp-wheel/blob/main/example.png)
 
 
 - Example usage:
