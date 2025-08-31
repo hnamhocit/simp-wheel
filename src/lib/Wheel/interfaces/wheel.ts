@@ -9,5 +9,6 @@ export interface WheelProps {
     container?: string;
     column?: string;
     item?: string;
+    activeRow?: string;
   };
 }

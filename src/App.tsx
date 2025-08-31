@@ -44,7 +44,7 @@ function App() {
   const [value, setValue] = useState<string[]>(["1", "6", "2025"]);
 
   return (
-    <div className="p-4 space-y-4">
+    <div className="p-4 space-y-4 bg-neutral-900">
       <SimpWheel
         classNames={{
           container: "w-md",

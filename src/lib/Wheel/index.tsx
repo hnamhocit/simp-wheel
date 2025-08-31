@@ -21,7 +21,12 @@ const Wheel: FC<WheelProps> = ({ cols, classNames, value, onChange, max }) => {
         classNames?.container,
       )}
     >
-      <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 h-12 rounded-xl bg-[rgba(0,0,0,0.1)]" />
+      <div
+        className={clsx(
+          "absolute top-1/2 left-0 w-full -translate-y-1/2 h-12 rounded-xl bg-[rgba(0,0,0,0.1)]",
+          classNames?.activeRow,
+        )}
+      />
 
       {cols.map((col, colIndex) => (
         <Column

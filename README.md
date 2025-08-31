@@ -1,36 +1,42 @@
-# Simp Wheel
+# 🎡 Simp Wheel
 
-## ![Demo Image](https://github.com/hnamhocit/simp-wheel/blob/main/example.png)
+A lightweight, customizable wheel picker for React.
 
+![Demo](https://github.com/hnamhocit/simp-wheel/blob/main/example.png)
 
-- Example usage:
+---
+
+## 🌐 Socials
+- 🐙 [GitHub](https://github.com/hnamhocit/simp-wheel)
+- 📘 [Facebook](https://fb.com/hnamhocit)
+
+---
+
+## ⚡ Installation
+
+```bash
+npm install simp-wheel
+# or
+yarn add simp-wheel
+```
+
+---
+
+## 🎨 Example Usage
 
 ```
 import { useState } from "react";
 import { SimpWheel } from "simp-wheel";
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
 ];
 
 const cols = [
   {
     id: "month",
-    items: Array.from({ length: 12 }).map((_, i) => ({
-      label: months[i],
-      value: String(i + 1),
-    })),
+    items: months.map((m, i) => ({ label: m, value: String(i + 1) })),
   },
   {
     id: "day",
@@ -53,18 +59,21 @@ function App() {
 
   return (
     <div className="p-4 space-y-4">
-      <Wheel
+      <SimpWheel
         classNames={{
-          container: "w-md",
+          container: "w-md shadow-xl rounded-2xl border p-2 bg-white",
+          column: "px-2",
+          item: "py-2 text-gray-600 hover:text-blue-500 transition",
+          activeRow: "text-blue-600 font-semibold text-lg",
         }}
         value={value}
         onChange={setValue}
         cols={cols}
       />
 
-      <p>
+      <p className="font-mono text-sm">
         Values:{" "}
-        <span className="bg-blue-500/10 text-blue-500 py-2 px-3 rounded-xl">
+        <span className="bg-blue-500/10 text-blue-600 py-1 px-2 rounded-lg">
           {JSON.stringify(value)}
         </span>
       </p>
@@ -73,11 +82,11 @@ function App() {
 }
 
 export default App;
-
 ```
 
+---
 
-- API
+## 📖 API
 
 ```
 interface WheelProps {
@@ -86,9 +95,10 @@ interface WheelProps {
   value: string[];
   onChange: (values: string[]) => void;
   classNames?: {
-    container?: string;
-    column?: string;
-    item?: string;
+    container?: string; // container style
+    column?: string;    // each column style
+    item?: string;      // each item style
+    activeRow?: string; // highlighted/selected item style
   };
 }
 ```
